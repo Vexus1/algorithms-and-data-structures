@@ -4,7 +4,6 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 from random import randint
 
-
 p = [9,5,2,5,6,7,4,3,2]
 
 def wielomian_On2(p,x):
@@ -18,8 +17,6 @@ def wielomian_On2(p,x):
     return wynik
 
 print(wielomian_On2(p,1))
-
-
 
 
 def wielomian_Onlogn(p,x):
@@ -44,8 +41,6 @@ def wielomian_Onlogn_oblicz(z,p,x):
 print(wielomian_Onlogn(p,1))
 
 
-
-
 n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11 = 1000, 2000, 5000, 10000, 15000, 20000, 25000, 30000, 35000, 42500, 50000
 
 def schemat_hornera1(p,x):
@@ -58,7 +53,6 @@ def schemat_hornera1(p,x):
     stop = perf_counter()
     return wynik, len(p), (stop-start)*1000
 
-
 print(schemat_hornera1(p,1))
 
 
@@ -70,7 +64,6 @@ print(data)
 x = []
 y = []
 for i in data:
-    # print(i)
     x.append(i[1])
     y.append(i[2])
 
@@ -89,7 +82,6 @@ def func(x,a,b):
     return a*x + b
 
 popt, pcov = curve_fit(func,x,y)
-
 x_ = np.arange(1,n11)
 
 plt.plot(x,y,'ro',label="Dane")

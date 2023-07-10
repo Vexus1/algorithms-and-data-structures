@@ -63,5 +63,3 @@ def check_syntax(html_string = ""):
 
 html = html_syntax(f"{dir_path}\page.html")
 print(check_syntax(html))
-
-

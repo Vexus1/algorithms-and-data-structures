@@ -3,7 +3,6 @@ from tkinter import ttk
 import random
 import time
  
-
 def insertion_sort(array, drawData, time_tick):
     """Algorytm sortowania przez wstawianie."""
 
@@ -20,7 +19,6 @@ def insertion_sort(array, drawData, time_tick):
         array[j+1] = key
         drawData(data)
         time.sleep(time_tick)
-
 
 root = Tk()
 root.title("Insertion sort Visualizer")
@@ -72,7 +70,6 @@ def alogrithm():
 
 mainframe = Frame(root, width=1000, height=50, bg="Grey")
 mainframe.grid(row=1, column=0)
-
 
 Generate = Button(mainframe, text="Generate", bg="Red", command=generate)
 Generate.place(height=40, width=300, x = 25, y = 5)

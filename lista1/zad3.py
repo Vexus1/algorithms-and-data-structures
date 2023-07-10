@@ -4,9 +4,7 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 from random import randint
 
-
 n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11 = 1000, 2000, 5000, 10000, 15000, 20000, 25000, 30000, 35000, 42500, 50000
-
 
 def zad3(tab):
     start = perf_counter()
@@ -22,7 +20,6 @@ data_zad3 = [zad3(i) for i in ([randint(0,50) for i in range(n1)], [randint(0,50
 x5 = []
 y5 = []
 for i in data_zad3:
-    # print(i)
     x5.append(i[1])
     y5.append(i[2])
 

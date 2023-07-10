@@ -4,8 +4,6 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 from random import randint
 
-
-
 n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11 = 1000, 2000, 5000, 10000, 15000, 20000, 25000, 30000, 35000, 42500, 50000
 
 def example1(S):
@@ -27,7 +25,6 @@ print(data1)
 x1 = []
 y1 = []
 for i in data1:
-    # print(i)
     x1.append(i[2])
     y1.append(i[1])
 
@@ -46,7 +43,6 @@ def func(x1,a,b):
     return a*x1 + b
 
 popt, pcov = curve_fit(func,x1,y1)
-
 x_ = np.arange(1,n11)
 
 plt.plot(x1,y1,'ro',label="Dane")
@@ -56,9 +52,6 @@ plt.ylabel('Czas wykonania')
 plt.title("example1 fit")
 plt.legend()
 plt.show()
-
-
-
 
 def example2(S):
     """Return the sum of the elements with even index in sequence S.
@@ -80,7 +73,6 @@ print(data2)
 x2 = []
 y2 = []
 for i in data2:
-    # print(i)
     x2.append(i[2])
     y2.append(i[1])
 
@@ -109,8 +101,6 @@ plt.ylabel('Czas wykonania')
 plt.title("example2 fit")
 plt.legend()
 plt.show()
-
-
 
 
 def example3(S):
@@ -153,7 +143,6 @@ def func(x3,a,b):
     return a*x3**2 + b
 
 popt, pcov = curve_fit(func,x3,y3)
-
 x_ = np.arange(1,int(n11/10))
 
 plt.plot(x3,y3,'ro',label="Dane")
@@ -163,8 +152,6 @@ plt.ylabel('Czas wykonania')
 plt.title("example3 fit")
 plt.legend()
 plt.show()
-
-
 
 
 def example4(A, B): # assume that A and B have equal length
@@ -228,7 +215,6 @@ def func(x4,a,b):
     return a*x4**3 + b
 
 popt, pcov = curve_fit(func,x4,y4)
-
 x_ = np.arange(1,int(n11/100))
 
 plt.plot(x4,y4,'ro',label="Dane")

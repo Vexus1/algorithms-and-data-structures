@@ -1,14 +1,3 @@
-
-# tab[0] <-- min
-# tab[1] <-- max
-
-# [1,2,3]
-# [1,3,2]
-# [2,1,3]
-# [2,3,1]
-# [3,1,2]
-# [3,2,1]
-
 def min_max(tab):
     """Znajduje najwięszką największą i najmniejszą wartość w podanej tablicy przy użyciu rekurencji."""
 
@@ -60,5 +49,3 @@ print(min_max(tab3))
 print(min_max(tab4))
 print(min_max(tab5))
 print(min_max.__doc__)
-
-

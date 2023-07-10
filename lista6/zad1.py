@@ -1,8 +1,5 @@
 from collections.abc import MutableMapping
-
-from collections.abc import MutableMapping
 from random import randrange         # used to pick MAD parameters
-
 
 class MapBase(MutableMapping):
   """Our own abstract base class that includes a nonpublic _Item class."""

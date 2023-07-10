@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
 
-
 def extend_performance(tab2):
     """Analiza wydajności metody extend"""
     tab1 = [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
@@ -11,7 +10,6 @@ def extend_performance(tab2):
     tab1.extend(tab2)
     stop = perf_counter()
     return len(tab1), (stop-start)*1000
-
 
 
 def append_performance(tab2):
@@ -22,7 +20,6 @@ def append_performance(tab2):
         tab1.append(i)
     stop = perf_counter()
     return len(tab1), (stop-start)*1000
-
 
 
 tab2a = [i for i in range(0,1000)]

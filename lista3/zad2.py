@@ -13,7 +13,6 @@ def pop_method(tab):
     stop = perf_counter()
     return len(tab), (stop - start)*1000
 
-# print(pop_method([randint(0,20000) for i in range(20000)]))
 
 r = 20000
 n = 100000
@@ -24,16 +23,13 @@ data = [pop_method(i) for i in ([randint(-r,r) for i in range(n)],  [randint(-r,
 [randint(-r,r) for i in range(n*12)], [randint(-r,r) for i in range(n*13)], [randint(-r,r) for i in range(n*14)], [randint(-r,r) for i in range(n*15)], 
 [randint(-r,r) for i in range(n*16)], [randint(-r,r) for i in range(n*17)], [randint(-r,r) for i in range(n*18)], [randint(-r,r) for i in range(n*19)],
 [randint(-r,r) for i in range(n*20)], [randint(-r,r) for i in range(n*21)], [randint(-r,r) for i in range(n*22)], [randint(-r,r) for i in range(n*23)])]
-# print(data)
     
 x = []
 y = []
 for i in data:
-    # print(i)
     x.append(i[0])
     y.append(i[1])
 
-# print(x)
 print(y)
 plt.plot(x,y,'ro',label="Dane")
 # plt.loglog(x1,y1,'ro',label="Dane")
@@ -48,7 +44,6 @@ def func(x,a,b):
     return a*x + b
 
 popt, pcov = curve_fit(func,x,y)
-
 x_ = np.arange(1,n*23)
 
 plt.plot(x,y,'ro',label="Dane")

@@ -61,7 +61,6 @@ for i in push_data:
     x_push.append(i[1])
     y_push.append(i[0])
 
-
 print(x_push)
 print(y_push)
 plt.plot(x_push,y_push,'ro',label="Dane")
@@ -86,7 +85,6 @@ plt.ylabel('Czas wykonania')
 plt.title("push_analyse fit")
 plt.legend()
 plt.show()
-
 
 print(S.__len__())
 print(S.top())

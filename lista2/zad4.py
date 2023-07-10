@@ -1,5 +1,3 @@
-
-
 def product_of(n, m):
     """Oblicza iloczyn dwóch podanych liczb m, n przy użyciu operatorów dodawania i odejmowania za pomocą rekurencji."""
     if n == 1:
@@ -12,7 +10,6 @@ def product_of(n, m):
     elif n < 1:
         n += 1   
         return -(m + product_of(n,-m))
-
 
 
 print(product_of(23,767),"=", 23*767)

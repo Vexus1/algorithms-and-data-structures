@@ -1,5 +1,3 @@
-
-
 def palindrome(word):
     """Sprawdza czy dany łańcuch znaków jest palindromem za pomocą rekurencji."""
     word = word.lower()

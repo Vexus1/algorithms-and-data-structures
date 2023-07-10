@@ -42,7 +42,6 @@ class DynamicArray:
         self._A[k] = value
         self._n += 1
 
-
     def remove(self,value):
         if self._n == 0:
             raise ValueError("Array is empty")

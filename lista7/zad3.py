@@ -1,5 +1,4 @@
 from queue import Queue
-
 import sys
 
 #reprezentacja wierzchołka grafu

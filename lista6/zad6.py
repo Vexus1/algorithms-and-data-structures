@@ -70,6 +70,5 @@ def quicksort(array, n):
     
 array = [9, -2, 4, 7, 2, 4, 0, -1, 23, 16, -5]
 n = len(array)
-
 sort = quicksort(array, n)
 print(array)

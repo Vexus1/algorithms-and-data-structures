@@ -268,12 +268,6 @@ class LinkedBinaryTree(BinaryTree):
             t2._size = 0
 
 
-
-
-
-
-
-
 class ExpressionTree(LinkedBinaryTree):
 
     def __init__(self, token, left=None, right=None):
@@ -331,7 +325,6 @@ class ExpressionTree(LinkedBinaryTree):
         else:
             # print(self.rewrite_deriv(self.left(p)))
             return ExpressionTree(p.element(), self.rewrite_deriv(self.left(p)), self.rewrite_deriv(self.right(p))) # Do reguły iloczynu i ilorazu 
-            # jakby wyciągnięcie z drzewa elementów w odpowiedniej kolejności aby były użyteczne i przypisanie ich do zmiennej
 
 
     def add_deriv(self, left, right):
